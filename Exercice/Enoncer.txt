@@ -13,3 +13,16 @@ Contraintes :
 
     Vous ne pouvez utiliser que des boucles for ou while, et vous ne pouvez pas utiliser de bibliothèques ou de fonctions tierces pour aider à dessiner la pyramide.
     L'entier n sera toujours positif et supérieur à 0.
+
+---
+
+Enoncé de la tâche:
+Dans le cadre d'une application de bibliothèque en ligne, nous devons créer un objet Book pour représenter chaque livre dans notre application. Chaque livre aura les propriétés suivantes :
+
+    title : Le titre du livre.
+    author : Le nom de l'auteur du livre.
+    pages : Le nombre de pages dans le livre.
+    publishedYear : L'année de publication du livre.
+    publisher : Le nom de l'éditeur du livre.
+
+En plus de ces propriétés, chaque livre doit avoir une méthode getSummary, qui retourne une chaîne de caractères décrivant le livre. La chaîne doit être formatée comme suit : "[title] est un livre écrit par [author], publié par [publisher] en [publishedYear] avec [pages] pages."
