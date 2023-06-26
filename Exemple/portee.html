@@ -1,0 +1,27 @@
+<script>
+    // scope global
+    function foo() {
+        // scope local
+        const bar = 4;
+        copy = bar / 2;
+        console.log(copy);
+        if (true) {
+            var yolo = 20; // var passe a traver la portee de block
+        }
+        console.log(yolo);
+    }
+
+    function foo2() {
+        // scope local
+        var bar = 1;
+        console.log(bar);
+        if (true) {
+            let yolo = 20; // var passe a traver la portee de block
+        }
+        console.log(yolo);
+    }
+
+    foo();
+    foo2();
+</script>
+<body></body>

@@ -1,0 +1,17 @@
+<script>
+    let a = 10.5;
+    let titre = a + "je suis un nombre";
+    a = 500;
+    console.log(typeof a);
+
+    function foo(a = 10) {
+        // parametre par defaut
+        if (typeof a === "number") {
+            console.log("je suis un nombre");
+        } else {
+            console.log("je ne suis pas un nombre");
+        }
+    }
+    foo("string");
+</script>
+<body></body>
