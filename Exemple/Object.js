@@ -28,14 +28,52 @@ class Voiture {
     }
 }
 
-let voiture1 = new Voiture("Peugeot", "208", "rouge", "2018");
-let voiture2 = new Voiture("Peugeot", "308", "bleu", "2019");
-let voiture3 = new Voiture("Peugeot", "508", "blanc", "2020");
+class Limousine extends Voiture {
+    constructor(marque, modele, couleur, annee, longueur) {
+        super(marque, modele, couleur, annee);
+        this.longueur = longueur;
+    }
+    rouler() {}
+
+    FaireUnTruc(x) {
+        console.log(x(this));
+    }
+}
+
+const voiture1 = new Voiture("Peugeot", "208", "rouge", "2018");
+const voiture2 = new Limousine("Peugeot", "208", "rouge", "2018", 10);
 
 console.log(voiture1);
 console.log(voiture2);
-console.log(voiture3);
+
+// -------------------------
+
+// Appel de fonction en parametre
+
+function mafonction(x) {
+    console.log("print la voiture :" + x);
+}
+
+voiture2.FaireUnTruc(mafonction);
+
+// -------------------------
+
+// Fonction anonyme
+voiture2.FaireUnTruc(function (x) {
+    console.log("print la voiture :" + x);
+});
+
+// -------------------------
+
+// Fonction flechee => (lambda)
+voiture2.FaireUnTruc((x) => x + 5);
+
+// x est le parametre de la fonction flechee
+// a droite de la flechee => on a le corps de la fonction
+
+// -------------------------
 
 voiture1.rouler();
 voiture2.accelerer();
-voiture3.freiner();
+voiture2.freiner();
+voiture2.rouler();

@@ -26,3 +26,69 @@ Dans le cadre d'une application de bibliothèque en ligne, nous devons créer un
     publisher : Le nom de l'éditeur du livre.
 
 En plus de ces propriétés, chaque livre doit avoir une méthode getSummary, qui retourne une chaîne de caractères décrivant le livre. La chaîne doit être formatée comme suit : "[title] est un livre écrit par [author], publié par [publisher] en [publishedYear] avec [pages] pages."
+
+---
+
+Titre du TP : Jeu de gestion de village en JavaScript
+
+Objectif du TP :
+Coder un jeu de simulation de gestion de village en JavaScript, en reprenant les notions de classes, de fonctions, de fonctions lambda et d'héritage.
+
+Enoncé :
+
+Dans ce TP, vous devrez créer un petit jeu de gestion de village. Les utilisateurs devront être capables de construire et gérer des bâtiments, dont un hôtel de ville, une caserne, une scierie et une mine. Ces bâtiments produiront des ressources sur une certaine durée de temps.
+
+Travail demandé :
+
+    Architecture des classes :
+
+        Classe Building : Créez une classe Building qui servira de classe parent pour tous les types de bâtiments. Elle devra contenir les propriétés communes à tous les bâtiments (par exemple, le nom, le niveau, la production de ressources, etc.) et les méthodes pour gérer ces propriétés.
+
+        Classes de bâtiments spécifiques : Créez une classe pour chaque type de bâtiment : Hôtel de Ville, Caserne, Scierie, Mine. Ces classes hériteront de la classe Building et pourront contenir des propriétés et des méthodes spécifiques à chaque type de bâtiment.
+
+    Gestion des ressources :
+        Implementez une méthode qui simule le temps qui passe dans le jeu et le processus de production des ressources par chaque bâtiment.
+
+    Interface utilisateur :
+
+        Créez une interface utilisateur simple pour afficher l'état actuel du village, incluant le nom, le niveau et la production de ressources pour chaque bâtiment.
+
+        L'interface devra également permettre aux utilisateurs de créer de nouveaux bâtiments et de gérer les bâtiments existants.
+
+    classes :
+
+    building :
+    	propriétés : nom, niveau, production de ressources
+    	méthodes : gérer les propriétés
+
+    hotel de ville :
+    	propriétés : nom, niveau, production de ressources
+    	méthodes : gérer les propriétés
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Jeu de gestion de village</title>
+        <style>
+            /* Ajoutez ici votre CSS */
+        </style>
+    </head>
+
+    <body>
+        <h1>Jeu de gestion de village</h1>
+
+        <h2>Créer un nouveau bâtiment</h2>
+
+        <div>
+            <button id="createCityHall">Créer un Hôtel de Ville</button>
+            <button id="createBarracks">Créer une Caserne</button>
+            <button id="createSawmill">Créer une Scierie</button>
+            <button id="createMine">Créer une Mine</button>
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
+```
