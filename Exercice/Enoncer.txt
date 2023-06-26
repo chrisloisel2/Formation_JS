@@ -1,0 +1,15 @@
+Exercice : Pyramides en JavaScript
+
+Objectif :
+
+Votre objectif est de créer une fonction dessinerPyramide en JavaScript qui accepte un entier positif n comme argument et qui affiche dans la console une pyramide de n lignes.
+
+Énoncé :
+
+    Écrivez une fonction dessinerPyramide(n) qui accepte un entier n en argument.
+    La fonction doit afficher une pyramide de n lignes dans la console, avec des espaces en début de ligne et des caractères '*' pour dessiner la pyramide.
+
+Contraintes :
+
+    Vous ne pouvez utiliser que des boucles for ou while, et vous ne pouvez pas utiliser de bibliothèques ou de fonctions tierces pour aider à dessiner la pyramide.
+    L'entier n sera toujours positif et supérieur à 0.
