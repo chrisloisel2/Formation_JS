@@ -108,3 +108,50 @@ Voici les étapes à suivre pour créer la calculatrice :
     En fonction de l'opération choisie, utilisez une structure de contrôle (par exemple, une instruction switch) pour appeler la fonction correspondante à partir du tableau de fonctions.
 
     Affichez le résultat de l'opération à l'utilisateur.
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+Exercice : Implémenter une fonction de filtre personnalisée
+
+Dans cet exercice, vous allez créer une fonction customFilter qui fonctionne de manière similaire à la méthode Array.prototype.filter intégrée dans JavaScript.
+
+Votre fonction customFilter devrait prendre deux arguments :
+
+    Un tableau d'éléments sur lequel effectuer le filtrage.
+    Une fonction predicate qui est appelée pour chaque élément du tableau. Si la fonction predicate renvoie true, l'élément est inclus dans le tableau de sortie. Si elle renvoie false, il est exclu.
+
+Voici le prototype de la fonction customFilter :
+
+function customFilter(array, predicate) {
+// Codez ici !
+}
+
+Voici l'utilisation attendue de la fonction customFilter :
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const filteredArray = customFilter(array, (element) => {
+return element % 2 === 0;
+});
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+Exercice : Création d'une fonction d'ordonnancement basée sur un prédicat
+
+Votre tâche consiste à créer une fonction order en JavaScript qui prend deux paramètres : un tableau d'objets et une fonction prédicat.
+
+La fonction order doit retourner un nouveau tableau, qui est une version ordonnée du tableau d'entrée. L'ordre des éléments doit être déterminé par la fonction prédicat passée en tant que deuxième argument.
+
+La fonction prédicat prend deux arguments (deux éléments du tableau) et doit retourner true si le premier élément doit être placé avant le deuxième dans le tableau ordonné, et false sinon.
+
+Voici un exemple d'utilisation de la fonction order :
+
+const array = [
+{ name: "Alice", age: 40 },
+{ name: "Bob", age: 30 },
+{ name: "Eve", age: 50 },
+];
+
+const orderedArray = order(array, (a, b) => {
+return a.age < b.age;
+});
