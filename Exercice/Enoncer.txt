@@ -157,3 +157,7 @@ const array = [
 const orderedArray = order(array, (a, b) => {
 return a.age < b.age;
 });
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+Exercice : Refonte de vos Exercice precedents de manière à utiliser les modules
