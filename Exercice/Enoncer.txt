@@ -161,3 +161,17 @@ return a.age < b.age;
 <!-- ------------------------------------------------------------------------------------------------------------- -->
 
 Exercice : Refonte de vos Exercice precedents de manière à utiliser les modules
+
+---
+
+Créez une interface utilisateur en HTML et CSS avec jQuery pour la gestion des événements. L'interface devra :
+
+    Afficher l'état actuel du village, incluant le nom, le niveau et la production de ressources pour chaque bâtiment.
+
+    Permettre aux utilisateurs de créer de nouveaux bâtiments en cliquant sur les boutons correspondants. Lorsqu'un bouton est cliqué, une instance du bâtiment correspondant doit être créée et ajoutée à une liste des bâtiments du village.
+
+    Permettre aux utilisateurs de gérer les bâtiments existants. Cela peut inclure l'amélioration des bâtiments, la récolte des ressources produites, etc.
+
+    Mettre à jour l'interface en temps réel à chaque fois qu'un changement est apporté à l'état du jeu.
+
+Le code HTML de base est fourni. Vous devrez le compléter en ajoutant les éléments nécessaires pour afficher l'état du village et les contrôles pour gérer les bâtiments. Vous devrez également ajouter votre propre CSS pour styliser l'application à votre goût.
