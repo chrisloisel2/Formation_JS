@@ -92,3 +92,19 @@ Travail demandé :
     </body>
 </html>
 ```
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+Vous devez créer une calculatrice en JavaScript. La calculatrice doit prendre en compte les opérations d'addition, de soustraction, de multiplication et de division. Pour cela, vous devez utiliser un tableau de fonctions pour stocker les opérations de la calculatrice.
+
+La calculatrice doit permettre à l'utilisateur d'entrer deux nombres et de choisir l'opération à effectuer. En fonction de l'opération choisie, la calculatrice doit exécuter la fonction correspondante à partir du tableau de fonctions et afficher le résultat.
+
+Voici les étapes à suivre pour créer la calculatrice :
+
+    Définissez un tableau de fonctions qui contient les fonctions d'addition, de soustraction, de multiplication et de division.
+
+    Demandez à l'utilisateur d'entrer deux nombres et de choisir l'opération à effectuer.
+
+    En fonction de l'opération choisie, utilisez une structure de contrôle (par exemple, une instruction switch) pour appeler la fonction correspondante à partir du tableau de fonctions.
+
+    Affichez le résultat de l'opération à l'utilisateur.

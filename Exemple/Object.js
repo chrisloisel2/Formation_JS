@@ -77,3 +77,7 @@ voiture1.rouler();
 voiture2.accelerer();
 voiture2.freiner();
 voiture2.rouler();
+
+Voiture.test = function (a) {
+    this.couleur = a;
+};
