@@ -146,6 +146,8 @@ La fonction prédicat prend deux arguments (deux éléments du tableau) et doit 
 
 Voici un exemple d'utilisation de la fonction order :
 
+Predicate = Lambda = Fonction anonyme / fonction fléchée
+
 const array = [
 { name: "Alice", age: 40 },
 { name: "Bob", age: 30 },
