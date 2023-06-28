@@ -1,6 +1,8 @@
-const express = require("express");
-const app = express();
-const port = 4200;
+const express = require("express"); // Import express
+const cors = require("cors"); // Import cors
+const app = express(); // Create express app
+const port = 5555; // definir le port d'écoute
+app.use(cors()); // Use cors
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
@@ -27,9 +29,12 @@ books = [
     },
 ];
 
+// GET
+// PUT
+// POST
+// DELETE
+
 app.get("/api/books", (req, res) => {
     console.log("GET /api/books");
-    console.log("req.query", req.query);
-    console.log("req.params", req.params);
     res.json(books);
 });
