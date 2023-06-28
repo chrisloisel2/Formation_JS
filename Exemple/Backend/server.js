@@ -2,6 +2,7 @@ const express = require("express"); // Import express
 const cors = require("cors"); // Import cors
 const app = express(); // Create express app
 const port = 5555; // definir le port d'écoute
+
 app.use(cors()); // Use cors
 
 app.listen(port, () => {
