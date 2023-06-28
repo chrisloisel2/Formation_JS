@@ -212,3 +212,15 @@ Lorsque l'utilisateur soumet le formulaire, si l'une des validations échoue, vo
 Vos codes HTML et JavaScript doivent être écrits de manière propre et organisée, en respectant les bonnes pratiques de codage.
 
 Conseil : Utilisez des expressions régulières pour la validation de l'adresse e-mail et du mot de passe.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+---
+
+Exercice : Affichage d'une liste d'utilisateurs
+
+Vous travaillez sur une application Web qui a besoin d'afficher une liste d'utilisateurs. Les informations sur ces utilisateurs sont disponibles à partir d'une API externe à l'adresse "http://82.165.127.44/users", qui renvoie les données au format JSON.
+
+Cependant, pour améliorer les performances de votre application, vous voulez éviter de faire une requête à cette API chaque fois que vous avez besoin de ces informations. Ainsi, après avoir récupéré les données de l'API pour la première fois, vous devez les stocker dans le localStorage du navigateur. Lors des visites ultérieures, au lieu de faire une requête à l'API, vous devriez d'abord vérifier si les données sont déjà présentes dans le localStorage. Si c'est le cas, utilisez ces données à la place. Sinon, faites une requête à l'API et stockez les résultats dans le localStorage pour une utilisation future.
+
+Votre tâche est de créer une fonction JavaScript qui fait cela. La fonction doit récupérer les informations de l'utilisateur soit à partir du localStorage (si elles sont présentes), soit en faisant une requête à l'API (si les données ne sont pas dans le localStorage ou sont obsolètes).
