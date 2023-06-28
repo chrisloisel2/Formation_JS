@@ -175,3 +175,40 @@ Créez une interface utilisateur en HTML et CSS avec jQuery pour la gestion des 
     Mettre à jour l'interface en temps réel à chaque fois qu'un changement est apporté à l'état du jeu.
 
 Le code HTML de base est fourni. Vous devrez le compléter en ajoutant les éléments nécessaires pour afficher l'état du village et les contrôles pour gérer les bâtiments. Vous devrez également ajouter votre propre CSS pour styliser l'application à votre goût.
+
+---
+
+Exercice :
+
+Vous êtes chargé de créer un formulaire d'inscription pour un site web. Le formulaire doit comprendre les champs suivants :
+
+    Prénom
+    Nom
+    Adresse e-mail
+    Mot de passe
+    Confirmation du mot de passe
+
+Chaque champ doit être validé en utilisant JavaScript selon les règles suivantes :
+
+    Le Prénom et le Nom :
+        Doivent être remplis.
+        Ne doivent contenir que des caractères alphabétiques.
+        Doivent avoir au moins 2 caractères et pas plus de 50.
+
+    Adresse e-mail :
+        Doit être rempli.
+        Doit correspondre à un format d'adresse e-mail valide (par exemple, john.doe@example.com).
+
+    Mot de passe :
+        Doit être rempli.
+        Doit contenir au moins 8 caractères, au moins une lettre majuscule, une lettre minuscule et un chiffre.
+
+    Confirmation du mot de passe :
+        Doit être rempli.
+        Doit correspondre exactement au champ du mot de passe.
+
+Lorsque l'utilisateur soumet le formulaire, si l'une des validations échoue, vous devez afficher un message d'erreur approprié à côté du champ qui a échoué. Si toutes les validations passent, affichez un message de succès à l'utilisateur.
+
+Vos codes HTML et JavaScript doivent être écrits de manière propre et organisée, en respectant les bonnes pratiques de codage.
+
+Conseil : Utilisez des expressions régulières pour la validation de l'adresse e-mail et du mot de passe.

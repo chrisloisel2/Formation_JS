@@ -1,0 +1,36 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="Formulaire.css" />
+</head>
+<form id="monForm" method="GET" action="#">
+    <h1>Ajout d'un utilisateur</h1>
+    <label for="nom">Nom</label>
+    <input type="text" name="nom" id="nom" required />
+    <br />
+
+    <label for="prenom">Prénom</label>
+    <input type="text" name="prenom" id="prenom" required pattern="[X]{5}" />
+    <br />
+
+    <label for="email">Email</label>
+    <input
+        type="text"
+        name="email"
+        id="email"
+        required
+        pattern="[^@]+@[^\.]+\..+"
+    />
+    <br />
+
+    <label for="password">Mot de passe</label>
+    <input type="password" name="password" id="password" />
+    <br />
+
+    <label for="password2">Confirmation du mot de passe</label>
+    <input type="password" name="password2" id="password2" />
+    <br />
+
+    <input type="submit" value="Envoyer" />
+</form>
+<script src="Formulaire.js"></script>
