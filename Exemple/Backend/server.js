@@ -1,7 +1,20 @@
 const express = require("express"); // Import express
 const cors = require("cors"); // Import cors
+const ws = require("ws"); // Import ws
+const WebSocket = require("ws");
 const app = express(); // Create express app
 const port = 5555; // definir le port d'écoute
+
+const wss = new WebSocket.Server({ port: 8080 });
+
+wss.on("connection", function connection(ws) {
+    console.log("New client connected");
+
+    ws.on("message", function incoming(message) {
+        console.log("received: %s", message);
+        ws.send("le message a ete recu");
+    });
+});
 
 app.use(cors()); // Use cors
 
